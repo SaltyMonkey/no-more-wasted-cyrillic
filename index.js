@@ -3,7 +3,10 @@ const testedLength = 6;
 
 module.exports = function (mod) {
 	mod.hook("S_CHAT", 3, event => {
-		let strForTest = event.message.length > testedLength ? event.message.substring(0,testedLength) : event.message;
+		let messageWithoutTags = event.message.replace("<FONT>", "");
+		let messageWithoutTags = messageWithoutTags.replace("</FONT>", "");
+
+		let strForTest = messageWithoutTags.length > testedLength ? messageWithoutTags.substring(0,testedLength) : messageWithoutTags;
 		if(cyrillicPattern.test(strForTest)) return false;
 	});
 }
