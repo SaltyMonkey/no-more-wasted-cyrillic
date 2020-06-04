@@ -1,0 +1,12 @@
+{
+    "disableAutoUpdate": false,
+    "name": "no-more-wasted-Cyrillic",
+    "options": {
+        "niceName": "NMWC",
+        "guiName": "NoMoreWastedCyrillic"
+    },
+    "author": "SaltyMonkey",
+    "description": "Removing all chat messages if they contains cyrillic letters",
+    "servers": ["https://raw.githubusercontent.com/SaltyMonkey/no-more-wasted-cyrillic/master/"],
+    "supportUrl": ["https://github.com/SaltyMonkey/no-more-wasted-cyrillic/issues"]
+}
